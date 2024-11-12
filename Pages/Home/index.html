@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Nestor COMPAORE</title>
+  </head>
+
+  <body>
+    <!-- **My Header** -->
+    <header>
+      <!-- *** My Navbar *** -->
+      <nav class="flex justify-center items-center mt-4">
+        <div class="nav-card">
+          <!-- ** My menus list ** -->
+          <ul class="flex gap-[2rem] justify-center items-center px-y">
+            <li class="nav-list"><a href="#home">Home</a></li>
+            <li class="nav-list"><a href="#about">About</a></li>
+            <li class="nav-list"><a href="#services">Services</a></li>
+            <li class="nav-list"><a href="#projects">Projects</a></li>
+            <li class="nav-list"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ** My slogan (hello) ** -->
+      <div>
+        <h2 class="text-center text-xl py-6">
+          Welcome to My Professional Portfolio 👋
+        </h2>
+      </div>
+    </header>
+    <!-- My languages and profil section -->
+    <section class="-t-8 flex justify-center items-center gap-[20rem]">
+      <!-- My languages + presentation part -->
+      <div class="lang + slogan z-10 cursor-pointer">
+        <!-- My presentation -->
+        <div class="w-[300px] mb-2">
+          <h3>
+            Hello, I'm
+            <span class="uppercase font-bold text-orange-600"
+              >Nestor COMPAORE</span
+            >
+            , a dedicated JavaScript full-stack developer
+          </h3>
+        </div>
+        <!-- first languages part -->
+        <div class="flex items-center justify-center gap-5">
+          <img
+            class="w-[25px] h-[38]"
+            src="../../assets/Home/lang/AngularJS.png"
+            alt="Angular.JS"
+          />
+          <img
+            class="w-[25px]"
+            src="../../assets/Home/lang/Vite.png"
+            alt="Vite.JS"
+          />
+          <img
+            class="w-[25px]"
+            src="../../assets/Home/lang/Vuejs.png"
+            alt="Vue.JS"
+          />
+          <img
+            class="w-[25px]"
+            src="../../assets/Home/lang/React.png"
+            alt="React.JS"
+          />
+          <img
+            class="w-[25px]"
+            src="../../assets/Home/lang/nodejs.png"
+            alt="Node.JS"
+          />
+        </div>
+        <!-- second languages part -->
+        <div class="flex items-center justify-center gap-5">
+          <img
+            class="w-[20px]"
+            src="../../assets/Home/lang/Svelte.png"
+            alt="Angular.JS"
+          />
+          <img
+            class="w-[20px]"
+            src="../../assets/Home/lang/Next.js.png"
+            alt="Vite.JS"
+          />
+          <img
+            class="w-[20px]"
+            src="../../assets/Home/lang/Ionic.png"
+            alt="Vue.JS"
+          />
+          <img
+            class="w-[20px]"
+            src="../../assets/Home/lang/Jquery.png"
+            alt="React.JS"
+          />
+        </div>
+        <!-- third languages part -->
+        <div class="flex items-center justify-center gap-5">
+          <img
+            class="w-[15px]"
+            src="../../assets/Home/lang/postgresql.png"
+            alt="Angular.JS"
+          />
+          <img
+            class="w-[20px]"
+            src="../../assets/Home/lang/mongo.png"
+            alt="Vite.JS"
+          />
+          <img
+            class="w-[15px]"
+            src="../../assets/Home/lang/firebase.png"
+            alt="Vue.JS"
+          />
+        </div>
+        <!-- my horizontal bar -->
+        <div class="flex justify-center items-center">
+          <hr class="bg-white h-1 w-[5rem] mt-3" />
+        </div>
+        <!-- my last languages part -->
+        <div class="py-3 flex items-center justify-center gap-5">
+          <img
+            class="w-[20px]"
+            src="../../assets/Home/lang/js.png"
+            alt="React.JS"
+          />
+          <img
+            class="w-[20px]"
+            src="../../assets/Home/lang/python.png"
+            alt="React.JS"
+          />
+        </div>
+      </div>
+      <!-- My profil part -->
+      <div class="img-profil z-10">
+        <img
+          class="w-[300px] h-[265px] cursor-pointer animate-move-up-down"
+          src="../../assets/Home/profil.png"
+          alt="Profil-design"
+        />
+      </div>
+    </section>
+    <!-- My hire me and dowload my CV section -->
+    <section class="absolute inset-0 flex items-center justify-center">
+      <div class="hire">
+        <button id="button">Hire me</button>
+      </div>
+      <div class="index-social">
+        <img
+          class="animate-move-down w-8 h-8 -mt-[3rem] cursor-pointer"
+          src="../../assets/Home/arrow.png"
+          alt="index-social"
+        />
+      </div>
+    </section>
+    <!-- My Socials section -->
+    <section>
+      <div class="flex justify-center items-center">
+        <div class="Myicons">
+          <a href="#">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-facebook-f"></span>
+            </div>
+            <div class="text">Facebook</div>
+          </a>
+          <a href="#">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-twitter"></span>
+            </div>
+            <div class="text">Twitter</div>
+          </a>
+          <a href="#">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-instagram"></span>
+            </div>
+            <div class="text">Instagram</div>
+          </a>
+          <a href="#">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-linkedin-in"></span>
+            </div>
+            <div class="text">Linkedin</div>
+          </a>
+          <a href="#">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-youtube"></span>
+            </div>
+            <div class="text">YouTube</div>
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-between items-center">
+        <img
+          class="cursor-pointer w-[55px] ml-[15rem]"
+          src="../../assets/Home/Symbole.png"
+          alt="CN"
+        />
+        <img
+          class="cursor-pointer w-[55px] mr-[15rem]"
+          src="../../assets/Home/DirectChat.png"
+          alt="Msg"
+        />
+      </div>
+    </section>
+    <!-- my citations part -->
+     <div class="citation text-center">
+        <h2 class="text-2xl"> ❤️ With God, we will accomplish great feats. ❤️</h2>
+        <p class="py-2 text-orange-600 font-bold underline">Psalm 60:12</p>
+     </div>
+    <!-- my footer -->
+    <footer class="footer">
+        <!-- my waves -->
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <!-- mon droit d'auteur nestor Compaore -->
+      <p>&copy;2024 Nestor  COMPAORE | All Rights Reserved</p>
+    </footer>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
