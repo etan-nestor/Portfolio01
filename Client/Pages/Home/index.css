@@ -57,6 +57,8 @@ a {
   background-color: orangered;
 }
 
+/* ****end nav + start mobile ***** */
+
 @keyframes moveUpDown {
   0%,
   100% {
@@ -274,7 +276,7 @@ a {
 
 .footer {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   width: 100%;
   background: #3586ff;
   min-height: 50px;
@@ -283,7 +285,6 @@ a {
   align-items: center;
   flex-direction: column;
 }
-
 
 .footer p {
   color: #0a0402;
@@ -346,4 +347,91 @@ a {
   100% {
     background-positon-x: 0px;
   }
+}
+
+/* mobile nav */
+.menu_res {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  flex-direction: column;
+  gap: 5px;
+  display: none; /* pour ecrans larges */
+}
+.mob_menu {
+  background: orangered;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  z-index: 12;
+  transition: 0.5s;
+}
+.mobile_nav {
+  background-color: #17115b;
+  width: 200px;
+  height: 100vh;
+  filter: drop-shadow(5px 4px 4px rgba(231, 228, 228, 0.25));
+  border-radius: 2px;
+  padding-left: 60px;
+  padding-top: 15px;
+  z-index: 10;
+}
+.nav-list-mobile {
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav-list-mobile:hover {
+  background: orangered;
+}
+.mob_menu:hover {
+  background: #04499e;
+  transition: 0.5s;
+}
+
+/* reponsivite */
+
+/* Très petits écrans (jusqu'à 320px) */
+@media (max-width: 320px) {
+  .nav-card {
+    display: none;
+  }
+  .menu_res {
+    display: flex;
+  }
+}
+
+/* Petits écrans (321px à 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .nav-card {
+    display: none;
+  }
+  .menu_res {
+    display: flex;
+  }
+}
+
+/* Écrans moyens (481px à 768px, tablettes) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav-card {
+    display: none;
+  }
+  .menu_res {
+    display: flex;
+  }
+}
+
+/* Écrans larges (769px à 1024px, petits ordinateurs portables) */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Écrans très larges (1025px à 1440px, ordinateurs de bureau standards) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+/* Écrans ultra-larges (1441px et plus, écrans 4K ou plus grands) */
+@media (min-width: 1441px) {
 }

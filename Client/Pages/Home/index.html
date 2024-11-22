@@ -19,18 +19,45 @@
   <body>
     <!-- **My Header** -->
     <header>
-      <!-- *** My Navbar *** -->
+      <!-- *** My Navbar desktop *** -->
       <nav class="flex justify-center items-center mt-4">
         <div class="nav-card">
           <!-- ** My menus list ** -->
           <ul class="flex gap-[2rem] justify-center items-center px-y">
             <li class="nav-list"><a href="#home">Home</a></li>
-            <li class="nav-list"><a href="#about">About</a></li>
+            <li class="nav-list"><a href="../About/about.html">About</a></li>
             <li class="nav-list"><a href="#services">Services</a></li>
             <li class="nav-list"><a href="#projects">Projects</a></li>
             <li class="nav-list"><a href="#contact">Contact</a></li>
           </ul>
         </div>
+        <!-- end desktop -->
+
+        <!-- my mobile nav -->
+        <div class="menu_res">
+          <!-- icon mobile  -->
+          <div class="mob_menu" id="mobile_menu">
+            <i class="fa-solid fa-ban"></i>
+            <i class="fas fa-bars"></i>
+          </div>
+          <!-- onglets mobile -->
+          <div id="mobile_nav" class="mobile_nav">
+            <ul
+              class="flex flex-col gap-y-[1rem] justify-center items-star px-y"
+            >
+              <li class="nav-list-mobile">
+                <a href="../Home/index.html">Home</a>
+              </li>
+              <li class="nav-list-mobile">
+                <a href="../About/about.html">About</a>
+              </li>
+              <li class="nav-list-mobile"><a href="#services">Services</a></li>
+              <li class="nav-list-mobile"><a href="#projects">Projects</a></li>
+              <li class="nav-list-mobile"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end mobile -->
       </nav>
       <!-- ** My slogan (hello) ** -->
       <div>
@@ -232,13 +259,13 @@
       </div>
     </section>
     <!-- my citations part -->
-     <div class="citation text-center">
-        <h2 class="text-2xl"> ❤️ With God, we will accomplish great feats. ❤️</h2>
-        <p class="py-2 text-orange-600 font-bold underline">Psalm 60:12</p>
-     </div>
+    <div class="citation text-center">
+      <h2 class="text-2xl">❤️ With God, we will accomplish great feats. ❤️</h2>
+      <p class="py-2 text-orange-600 font-bold underline">Psalm 60:12</p>
+    </div>
     <!-- my footer -->
     <footer class="footer">
-        <!-- my waves -->
+      <!-- my waves -->
       <div class="waves">
         <div class="wave" id="wave1"></div>
         <div class="wave" id="wave2"></div>
@@ -246,9 +273,9 @@
         <div class="wave" id="wave4"></div>
       </div>
       <!-- mon droit d'auteur nestor Compaore -->
-      <p>&copy;2024 Nestor  COMPAORE | All Rights Reserved</p>
+      <p>&copy;2024 Nestor COMPAORE | All Rights Reserved</p>
     </footer>
-    
+
     <script src="index.js"></script>
   </body>
 </html>
