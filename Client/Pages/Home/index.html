@@ -3,27 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Nestor Compaoré, un développeur full-stack JavaScript spécialisé en frameworks modernes comme React, Angular, et Vue."
+    />
+    <meta
+      name="keywords"
+      content="développeur full-stack, JavaScript, React, Vue, Angular, Node.js"
+    />
+    <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- police Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos anime -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- styles -->
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../../Components/variables.css" />
+    <link rel="stylesheet" href="../../Components/responsives.css" />
     <title>Nestor COMPAORE</title>
   </head>
 
   <body>
     <!-- **My Header** -->
     <header>
-      <!-- *** My Navbar desktop *** -->
-      <nav class="flex justify-center items-center mt-4">
+      <!-- *** My Navbar *** -->
+      <nav class="nav">
+        <!-- *** My Navbar desktop *** -->
         <div class="nav-card">
-          <!-- ** My menus list ** -->
-          <ul class="flex gap-[2rem] justify-center items-center px-y">
+          <!-- ** Desktop menu ** -->
+          <ul class="onglets">
             <li class="nav-list"><a href="#home">Home</a></li>
             <li class="nav-list"><a href="../About/about.html">About</a></li>
             <li class="nav-list"><a href="#services">Services</a></li>
@@ -31,47 +51,18 @@
             <li class="nav-list"><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <!-- end desktop -->
-
-        <!-- my mobile nav -->
-        <div class="menu_res">
-          <!-- icon mobile  -->
-          <div class="mob_menu" id="mobile_menu">
-            <i class="fa-solid fa-ban"></i>
-            <i class="fas fa-bars"></i>
-          </div>
-          <!-- onglets mobile -->
-          <div id="mobile_nav" class="mobile_nav">
-            <ul
-              class="flex flex-col gap-y-[1rem] justify-center items-star px-y"
-            >
-              <li class="nav-list-mobile">
-                <a href="../Home/index.html">Home</a>
-              </li>
-              <li class="nav-list-mobile">
-                <a href="../About/about.html">About</a>
-              </li>
-              <li class="nav-list-mobile"><a href="#services">Services</a></li>
-              <li class="nav-list-mobile"><a href="#projects">Projects</a></li>
-              <li class="nav-list-mobile"><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- end mobile -->
       </nav>
       <!-- ** My slogan (hello) ** -->
-      <div>
-        <h2 class="text-center text-xl py-6">
-          Welcome to My Professional Portfolio 👋
-        </h2>
+      <div class="top-text">
+        <h2 class="slg-text">Welcome to My Professional Portfolio 👋</h2>
       </div>
     </header>
     <!-- My languages and profil section -->
-    <section class="-t-8 flex justify-center items-center gap-[20rem]">
+    <section class="lang-section">
       <!-- My languages + presentation part -->
-      <div class="lang + slogan z-10 cursor-pointer">
+      <div class="lang-slogan">
         <!-- My presentation -->
-        <div class="w-[300px] mb-2">
+        <div class="resume">
           <h3>
             Hello, I'm
             <span class="uppercase font-bold text-orange-600"
@@ -81,7 +72,7 @@
           </h3>
         </div>
         <!-- first languages part -->
-        <div class="flex items-center justify-center gap-5">
+        <div class="frst-lang">
           <img
             class="w-[25px] h-[38]"
             src="../../assets/Home/lang/AngularJS.png"
@@ -109,7 +100,7 @@
           />
         </div>
         <!-- second languages part -->
-        <div class="flex items-center justify-center gap-5">
+        <div class="scnd-lang">
           <img
             class="w-[20px]"
             src="../../assets/Home/lang/Svelte.png"
@@ -132,7 +123,7 @@
           />
         </div>
         <!-- third languages part -->
-        <div class="flex items-center justify-center gap-5">
+        <div class="thrd-lang">
           <img
             class="w-[15px]"
             src="../../assets/Home/lang/postgresql.png"
@@ -150,11 +141,11 @@
           />
         </div>
         <!-- my horizontal bar -->
-        <div class="flex justify-center items-center">
-          <hr class="bg-white h-1 w-[5rem] mt-3" />
+        <div class="lg-bar">
+          <hr class="hr-lg" />
         </div>
         <!-- my last languages part -->
-        <div class="py-3 flex items-center justify-center gap-5">
+        <div class="lst-lang mt-3">
           <img
             class="w-[20px]"
             src="../../assets/Home/lang/js.png"
@@ -165,19 +156,29 @@
             src="../../assets/Home/lang/python.png"
             alt="React.JS"
           />
+          <img
+            class="w-[20px]"
+            src="../../assets/Home/lang/Ts.png"
+            alt="Lua"
+          />
+          <img
+            class="w-[30px]"
+            src="../../assets/Home/lang/lua.png"
+            alt="Lua"
+          />
         </div>
       </div>
       <!-- My profil part -->
-      <div class="img-profil z-10">
+      <div class="img-profil">
         <img
-          class="w-[300px] h-[265px] cursor-pointer animate-move-up-down"
+          class="profil-home"
           src="../../assets/Home/profil.png"
           alt="Profil-design"
         />
       </div>
     </section>
     <!-- My hire me and dowload my CV section -->
-    <section class="absolute inset-0 flex items-center justify-center">
+    <section class="hire-section">
       <div class="hire">
         <button id="button">Hire me</button>
       </div>
@@ -190,8 +191,8 @@
       </div>
     </section>
     <!-- My Socials section -->
-    <section>
-      <div class="flex justify-center items-center">
+    <section class="socila-section">
+      <div class="social-icons">
         <div class="Myicons">
           <a href="#">
             <div class="layer">
@@ -245,14 +246,15 @@
           </a>
         </div>
       </div>
+      <!-- images icons cn et msg -->
       <div class="flex justify-between items-center">
         <img
-          class="cursor-pointer w-[55px] ml-[15rem]"
+          class="cursor-pointer w-[55px] ml-[15rem] cn-vibr"
           src="../../assets/Home/Symbole.png"
           alt="CN"
         />
         <img
-          class="cursor-pointer w-[55px] mr-[15rem]"
+          class="cursor-pointer w-[55px] mr-[15rem] msg-vibr"
           src="../../assets/Home/DirectChat.png"
           alt="Msg"
         />

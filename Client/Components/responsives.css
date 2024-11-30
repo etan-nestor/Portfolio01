@@ -1,0 +1,248 @@
+/* Très petits écrans (jusqu'à 320px) */
+
+@media (max-width: 320px) {
+  .nav-card {
+    display: none;
+  }
+  .top-text {
+    width: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+/* Petits écrans (321px à 480px) */
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+  /* nav card */
+  .nav-card {
+    display: none;
+  }
+  /* slogan text */
+  .top-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slg-text {
+    width: 300px;
+    margin-bottom: 18px;
+  }
+  /* section languages */
+
+  /* presentation */
+  .resume{
+    width: 300px;
+    margin-bottom: 5px; 
+    font-size: 16px;
+  }
+/* langages section */
+
+  .lang-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  /* bar blanc */
+  .lg-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .hr-lg{
+    background-color: white;
+    height: 0.25rem;
+    width: 5rem;
+  }
+
+  .lst-lang{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+/* none les autres sur mobile */
+
+  .frst-lang, .scnd-lang, .thrd-lang{
+    display: none;
+  }
+  /* profile */
+
+  .profil-home{
+    width: 200px;
+    height: 190px;
+  }
+  
+/* My section socials styles */
+
+.socila-section{
+
+}
+
+.socila-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.Myicons {
+  display: inline-flex;
+}
+
+.Myicons a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+
+.Myicons a .layer {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s;
+}
+
+.Myicons a:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.Myicons a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.Myicons a .layer span.fab {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.Myicons a:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.icons a:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+.Myicons a:hover .layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+
+.Myicons a:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+
+.Myicons a:hover .layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+
+.Myicons a:nth-child(1) .layer span,
+.Myicons a:nth-child(1) .text {
+  color: #0840af;
+  border-color: #0855f0;
+}
+
+.Myicons a:nth-child(2) .layer span,
+.Myicons a:nth-child(2) .text {
+  color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.Myicons a:nth-child(3) .layer span,
+.Myicons a:nth-child(3) .text {
+  color: #e1306c;
+  border-color: #e1306c;
+}
+
+.Myicons a:nth-child(4) .layer span,
+.Myicons a:nth-child(4) .text {
+  color: #04499e;
+  border-color: #043e85;
+}
+
+.Myicons a:nth-child(5) .layer span,
+.Myicons a:nth-child(5) .text {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.Myicons a:hover:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px #4267b2;
+}
+
+.Myicons a:hover:nth-child(2) .layer span {
+  box-shadow: -1px 1px 3px #1da1f2;
+}
+
+.Myicons a:hover:nth-child(3) .layer span {
+  box-shadow: -1px 1px 3px #e1306c;
+}
+
+.Myicons a:hover:nth-child(4) .layer span {
+  box-shadow: -1px 1px 3px #2867b2;
+}
+
+.Myicons a:hover:nth-child(5) .layer span {
+  box-shadow: -1px 1px 3px #ff0000;
+}
+
+.Myicons a .text {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.Myicons a:hover .text {
+  bottom: -35px;
+  opacity: 1;
+}
+  /* hire-section */
+
+  .hire-section{
+    position: relative;
+    display: flex;
+    align-items: center;  
+    justify-content: center; /
+  }
+}
+
+/* Écrans moyens (481px à 768px, tablettes) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav-card {
+    display: none;
+  }
+}
+
+/* Écrans larges (769px à 1024px, petits ordinateurs portables) */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Écrans très larges (1025px à 1440px, ordinateurs de bureau standards) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+/* Écrans ultra-larges (1441px et plus, écrans 4K ou plus grands) */
+@media (min-width: 1441px) {
+}
