@@ -24,6 +24,10 @@
     width: 300px;
     margin-bottom: 5px; 
     font-size: 16px;
+    text-align: center;
+  }
+  .resume h3{
+    text-align: center;
   }
 /* langages section */
 
@@ -243,6 +247,9 @@
     font-size: 16px;
     text-align: center;
   }
+  .resume h3{
+    text-align: center;
+  }
 /* langages section */
 
   .lang-section {
@@ -460,7 +467,9 @@
     margin-bottom: 5px; 
     font-size: 16px;
     text-align: center;
-
+  }
+  .resume h3{
+    text-align: center;
   }
 /* langages section */
 
@@ -680,7 +689,9 @@
     margin-bottom: 5px; 
     font-size: 16px;
     text-align: center;
-
+  }
+  .resume h3{
+    text-align: center;
   }
 /* langages section */
 
