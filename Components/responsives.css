@@ -232,7 +232,7 @@
 /* Petits écrans (321px à 480px) */
 
 
-@media (min-width: 321px) and (max-width: 480px) {
+@media (max-width: 480px) {
 
   /* nav card */
   .nav-card {
@@ -534,7 +534,7 @@
 
 /* Écrans moyens (481px à 768px, tablettes) */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
   /* nav card */
   .nav-card {
@@ -836,7 +836,7 @@
 
 /* Écrans larges (769px à 1024px, petits ordinateurs portables) */
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
   /* nav card */
   .nav-card {
@@ -1066,7 +1066,7 @@
 }
 
 /* Écrans très larges (1025px à 1440px, ordinateurs de bureau standards) */
-@media (min-width: 1025px) and (max-width: 1440px) {}
+@media (max-width: 1440px) {}
 
 /* Écrans ultra-larges (1441px et plus, écrans 4K ou plus grands) */
 @media (min-width: 1441px) {}
