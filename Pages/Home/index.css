@@ -67,10 +67,12 @@ a {
 .nav-list:hover {
   background-color: orangered;
 }
+
 .top-text {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .slg-text {
   text-align: center;
   font-size: 1.25rem;
@@ -87,42 +89,49 @@ a {
   gap: 20rem;
   transition: 0.3s;
 }
-.lang-slogan{
+
+.lang-slogan {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.resume{
+.resume {
   width: 300px;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
 
-.frst-lang, .scnd-lang, .thrd-lang, .lst-lang{
+.frst-lang,
+.scnd-lang,
+.thrd-lang,
+.lst-lang {
   display: flex;
   align-items: center;
-  justify-content: center; 
-  gap: 1.25rem;  
+  justify-content: center;
+  gap: 1.25rem;
 }
 
-.lg-bar{
+.lg-bar {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-.hr-lg{
+
+.hr-lg {
   background-color: white;
   height: 0.25rem;
   width: 5rem;
-  margin-top: 0.75rem; 
+  margin-top: 0.75rem;
 }
 
-.profil-home{
+.profil-home {
   width: 300px;
   height: 265px;
   cursor: pointer;
   animation: moveUpDown 3s ease-in-out infinite;
 }
+
 @keyframes moveUpDown {
+
   0%,
   100% {
     transform: translateY(0);
@@ -138,10 +147,10 @@ a {
 
 
 
-.social-icons{
+.social-icons {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 
@@ -273,31 +282,40 @@ a {
   opacity: 1;
 }
 
-.hire-section{
+.hire-section {
   position: absolute;
-  top: 0; 
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   display: flex;
-  align-items: center;  
-  justify-content: center; /
+  align-items: center;
+  justify-content: center;/
 }
-.cn-msg{
+
+.cn-msg {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.citation{
+
+.citation {
   text-align: center;
 }
 
-/* ****end nav + start mobile ***** */
 
 
 
+.arrow {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-top: -3rem;
+  animation: moveDown 3s ease-in-out infinite;
+}
 
 @keyframes moveDown {
+
   0%,
   100% {
     transform: translateY(-10px);
@@ -308,9 +326,6 @@ a {
   }
 }
 
-.animate-move-down {
-  animation: moveDown 3s ease-in-out infinite;
-}
 
 
 
@@ -331,18 +346,22 @@ a {
     transform-origin: center center;
     animation-timing-function: ease-out;
   }
+
   10% {
     transform: scale(0.91);
     animation-timing-function: ease-in;
   }
+
   17% {
     transform: scale(0.98);
     animation-timing-function: ease-out;
   }
+
   33% {
     transform: scale(0.87);
     animation-timing-function: ease-in;
   }
+
   45% {
     transform: scale(1);
     animation-timing-function: ease-out;
@@ -353,18 +372,23 @@ a {
   0% {
     transform: translate(0);
   }
+
   20% {
     transform: translate(-2px, 2px);
   }
+
   40% {
     transform: translate(-2px, -2px);
   }
+
   60% {
     transform: translate(2px, 2px);
   }
+
   80% {
     transform: translate(2px, -2px);
   }
+
   100% {
     transform: translate(0);
   }
@@ -487,6 +511,7 @@ a {
   0% {
     background-position-x: 1000px;
   }
+
   100% {
     background-positon-x: 0px;
   }
@@ -496,9 +521,9 @@ a {
   0% {
     background-position-x: -1000px;
   }
+
   100% {
     background-positon-x: 0px;
   }
 }
 
-/* mobile nav */
