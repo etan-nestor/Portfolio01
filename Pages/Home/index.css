@@ -116,9 +116,6 @@ a {
   margin-top: 0.75rem; 
 }
 
-.img-profil{
-
-}
 .profil-home{
   width: 300px;
   height: 265px;
@@ -139,11 +136,9 @@ a {
 /* My section socials styles */
 
 
-.social-section{
 
-}
 
-.socila-icons{
+.social-icons{
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -288,7 +283,14 @@ a {
   align-items: center;  
   justify-content: center; /
 }
-
+.cn-msg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.citation{
+  text-align: center;
+}
 
 /* ****end nav + start mobile ***** */
 

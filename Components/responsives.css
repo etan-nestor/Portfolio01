@@ -515,11 +515,7 @@
   
 /* My section socials styles */
 
-.socila-section{
-
-}
-
-.socila-icons{
+.social-icons{
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -559,7 +555,7 @@
 }
 
 .Myicons a .layer span.fab {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
   text-align: center;
 }
@@ -649,8 +645,9 @@
 }
 
 .Myicons a:hover .text {
-  bottom: -35px;
+  bottom: -25px;
   opacity: 1;
+  font-size: 14px;
 }
   /* hire-section */
 
@@ -660,6 +657,19 @@
     align-items: center;  
     justify-content: center; /
   }
+
+  /* cn et msg */
+
+  .cn-msg{
+    display: none;
+  }
+  .citation{
+    margin-top: 25px;
+  }
+.citation > h2{
+  font-size: 16px;
+  font-weight: bold;
+}
 }
 
 
