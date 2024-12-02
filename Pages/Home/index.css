@@ -297,6 +297,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .citation {
@@ -526,4 +527,3 @@ a {
     background-positon-x: 0px;
   }
 }
-
